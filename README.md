@@ -27,7 +27,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 4.设置，添加SSL，开启强制使用https。
 
 ### 二、X-UI
-这里使用docer安装器安装。
+这里使用docker安装器安装。
 
 1.宝塔安装docker安装器，添加镜像源
 ```bash
