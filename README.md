@@ -205,6 +205,9 @@ User=root
 WantedBy=default.target
 EOF
 ```
+
+挂载成功后，输入df -h命令即可看到挂载的磁盘
+
 6.常用命令
 
 ```
@@ -218,4 +221,9 @@ systemctl stop rclone
 ```
 ```
 systemctl status rclone
+```
+
+7.Transmission添加rlone挂载在GoogleDrive上的路径
+```
+/GoogleDrive
 ```
