@@ -68,7 +68,6 @@ docker run -itd --network=host \
 ```
 代理名称 x-ui
 目标URL  http://127.0.0.1:54321  发送域名 $host
-#其余留空
 ```
 
 5.配置`VMess`协议，开启`ws`，路径`/xiya`。
@@ -116,8 +115,33 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 ```
 代理名称 alist
 目标URL  http://127.0.0.1:5244  发送域名 $host
-#其余留空
 ```
 
+## Transmission on docker
 
+1.添加镜像源
+```
+helloz/transmission
+```
+2.不配置容器，使用代码
+```javascript
+docker run -d --name="transmission" \
+  -e USERNAME=ventus \ #账号
+  -e PASSWORD=ventus \ #密码
+  -p 9091:9091 \
+  -p 51413:51413 \
+  -p 51413:51413/udp \
+  -v /data/downloads:/root/Downloads \
+  -v /data/transmission:/root/.config/transmission-daemon \
+  --restart=always \
+  helloz/transmission
+```
+
+3.在Cloudflare中解析二级域名t.example.com
+
+4.添加反向代理到t.example.com
+```
+代理名称 transmission
+目标URL  http://127.0.0.1:9091  发送域名 $host
+```
 
