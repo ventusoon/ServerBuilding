@@ -145,3 +145,77 @@ docker run -d --name="transmission" \
 目标URL  http://127.0.0.1:9091  发送域名 $host
 ```
 
+## 安装Rclone，挂载GoogleDrive
+
+1.安装Rclone
+```bash
+wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh
+```
+
+2.初始化配置
+```
+rclone config
+```
+
+3.选择GoogleDrive，剩余操作参考[这里](https://www.jiyiblog.com/archives/031167.html)
+
+4.挂载磁盘
+```
+mkdir -p /GoogleDrive
+```
+```bash
+/usr/bin/rclone mount luvsia:ventus /GoogleDrive \
+ --umask 0000 \
+ --default-permissions \
+ --allow-non-empty \
+ --allow-other \
+ --transfers 4 \
+ --buffer-size 32M \
+ --low-level-retries 200
+ --dir-cache-time 12h
+ --vfs-read-chunk-size 32M
+ --vfs-read-chunk-size-limit 1G
+ ```
+5.配置开机自动挂载
+```
+cat > /etc/systemd/system/rclone.service <<EOF
+[Unit]
+Description=Rclone
+AssertPathIsDirectory=LocalFolder
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount luvsia:ventus /GoogleDrive \
+ --umask 0000 \
+ --default-permissions \
+ --allow-non-empty \
+ --allow-other \
+ --transfers 4 \
+ --buffer-size 32M \
+ --low-level-retries 200
+ --dir-cache-time 12h
+ --vfs-read-chunk-size 32M
+ --vfs-read-chunk-size-limit 1G
+ExecStop=/bin/fusermount -u LocalFolder
+Restart=on-abort
+User=root
+
+[Install]
+WantedBy=default.target
+EOF
+```
+6.常用命令
+
+```
+systemctl start rclone
+```
+```
+systemctl enable rclone
+```
+```
+systemctl stop rclone
+```
+```
+systemctl status rclone
+```
