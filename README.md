@@ -5,9 +5,9 @@ LuvSia
 * [准备工作](#准备工作)
 * [搭建思路](#搭建思路)
 * [开始搭建](#开始搭建)
-    * 宝塔面板
-    * X-UI on docker
-    * Alist on docker
+    * [宝塔面板](##宝塔面板)
+    * [X-UI on docker](##X-UI on docker)
+    * [Alist on docker](##Alist on docker)
 
 
 # 准备工作
@@ -48,7 +48,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 ## X-UI on docker
 
 1.添加镜像源
-```bash
+```
 enwaiax/x-ui:latest
 ```
 2.不配置容器，使用代码
@@ -64,7 +64,7 @@ docker run -itd --network=host \
 3.在Cloudflare中解析二级域名x.example.com
 
 4.添加反向代理到x.example.com
-```bash
+```
 代理名称 x-ui
 目标URL  http://127.0.0.1:54321  发送域名 $host
 #其余留空
@@ -101,7 +101,7 @@ location /xiya {
 ## Alist on docker
 
 1.添加镜像源
-```bash
+```
 xhofe/alist:latest
 ```
 2.不配置容器，使用代码
@@ -112,7 +112,7 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 3.在Cloudflare中解析二级域名a.example.com
 
 4.添加反向代理到a.example.com
-```bash
+```
 代理名称 alist
 目标URL  http://127.0.0.1:5244  发送域名 $host
 #其余留空
