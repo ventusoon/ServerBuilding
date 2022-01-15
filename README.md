@@ -1,7 +1,7 @@
 # LuvSia 
 # 从零开始的服务器搭建纪实
 
-一、准备工作：
+## 准备工作：
 
 VPS、解析到cloudflare的域名
 
@@ -9,7 +9,7 @@ VPS、解析到cloudflare的域名
 #更新软件源
 apt update
 ```
-二、搭建思路：
+## 搭建思路：
 
 预留主站点域名地址给网站搭建，**~~给各个应用添加前端路径~~**。
 
@@ -17,7 +17,9 @@ apt update
 
 不“开启强制使用https”。
 
-### 一、宝塔面板 
+## 常用工具
+
+### 宝塔面板 
 1.使用一键配置工具，选择29→62
 ```bash
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
@@ -30,7 +32,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 
 5.安装docker安装器。
 
-### 二、X-UI on docker
+### X-UI on docker
 
 1.添加镜像源
 ```bash
@@ -75,11 +77,15 @@ location /xiya {
 
 7.开启Cloudflare小云朵，并优选IP。
 
-8.[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/%E4%BC%98%E9%80%89ip.zip) ，选出优选IP后，
+8.[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/%E4%BC%98%E9%80%89ip.zip) ，选出优选IP后，客户端如下配置
+```diff
+-填入优选IP
+-更改端口为443；
+-host设置x.example.com；
+-开启tls。
+```
 
-在客户端填入优选IP、更改端口为443，开启tls。
-
-### 三、Alist on docker
+### Alist on docker
 
 1.添加镜像源
 ```bash
