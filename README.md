@@ -64,7 +64,7 @@ docker run -itd --network=host \
 5.配置vmess协议，开启ws，路径/xiya。
 
 6.开启CDN加速，在nginx配置文件中添加如下。
-```bash
+```javascript
 location /xiya {
         proxy_redirect off;
         proxy_pass http://127.0.0.1:22513;
@@ -96,7 +96,7 @@ location /xiya {
 xhofe/alist:latest
 ```
 2.不配置容器，使用代码
-```bash
+```javascript
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
 
