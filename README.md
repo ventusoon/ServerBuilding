@@ -1,13 +1,13 @@
 LuvSia 
 从零开始的服务器搭建纪实
 ===========================
-## 目录
+# 目录
 * [准备工作](#准备工作)
 * [搭建思路](#搭建思路)
 * [开始搭建](#开始搭建)
     * [宝塔面板](#宝塔面板)
-    * [X-UI on docker](#X-UI on docker)
-    * [Alist on docker](#Alist on docker)
+    * [X-UI on docker](#x-ui-on-docker)
+    * [Alist on docker](#alist-on-docker)
 
 
 # 准备工作
