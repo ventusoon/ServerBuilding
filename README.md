@@ -5,9 +5,9 @@ LuvSia
 * [准备工作](#准备工作)
 * [搭建思路](#搭建思路)
 * [开始搭建](#开始搭建)
-    * [宝塔面板](##宝塔面板)
-    * [X-UI on docker](##X-UI on docker)
-    * [Alist on docker](##Alist on docker)
+    * [宝塔面板](#宝塔面板)
+    * [X-UI on docker](#X-UI on docker)
+    * [Alist on docker](#Alist on docker)
 
 
 # 准备工作
