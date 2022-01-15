@@ -9,7 +9,7 @@ LuvSia
     * [X-UI on docker](#x-ui-on-docker)
     * [Alist on docker](#alist-on-docker)
     * [Transmission on docker](#Transmission-on-docker)
-    * [Rclone+GoogleDrive](#Rclone-+-GoogleDrive)
+    * [Rclone mount GoogleDrive](#Rclone-mount-GoogleDrive)
 
 
 # 准备工作
@@ -147,7 +147,7 @@ docker run -d --name="transmission" \
 目标URL  http://127.0.0.1:9091  发送域名 $host
 ```
 
-## Rclone+GoogleDrive
+## Rclone mount GoogleDrive
 
 1.安装Rclone
 ```bash
