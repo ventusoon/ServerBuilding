@@ -37,8 +37,9 @@ apt update
 ```bash
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
 ```
+![](https://github.com/ventusoon/LuvSia/raw/main/img/sh.png)
 2.安装nginx-1.21、mysql-5.5、php-7.4、phpmyadmin-5.0四件套
-
+![](https://github.com/ventusoon/LuvSia/raw/main/img/bt.png)
 3.添加站点。
 
 4.设置，添加SSL，开启强制使用https。
