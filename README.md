@@ -55,6 +55,26 @@ docker run -itd --network=host \
 #其余留空
 ```
 
+5.配置vmess协议，开启ws，路径/xiya。
+
+6.开启CDN加速，在nginx配置文件中添加如下。
+```bash
+location /xiya {
+        proxy_redirect off;
+        proxy_pass http://127.0.0.1:22513;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $http_host;
+        proxy_read_timeout 300s;
+        # Show realip in v2ray access.log
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
+```
+
+7.开启Cloudflare小云朵，并优选IP。
+[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/%E4%BC%98%E9%80%89ip.zip) 选出优选IP后填入到你的客户端地址即可
 ### 三、Alist on docker
 
 1.添加镜像源
