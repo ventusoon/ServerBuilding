@@ -126,8 +126,8 @@ helloz/transmission
 2.不配置容器，使用代码
 ```javascript
 docker run -d --name="transmission" \
-  -e USERNAME=ventus \ #账号
-  -e PASSWORD=ventus \ #密码
+  -e USERNAME=ventus \
+  -e PASSWORD=ysw554247430 \
   -p 9091:9091 \
   -p 51413:51413 \
   -p 51413:51413/udp \
