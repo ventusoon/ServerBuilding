@@ -74,7 +74,11 @@ location /xiya {
 ```
 
 7.开启Cloudflare小云朵，并优选IP。
-[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/%E4%BC%98%E9%80%89ip.zip) 选出优选IP后填入到你的客户端地址即可
+
+8.[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/%E4%BC%98%E9%80%89ip.zip) ，选出优选IP后，
+
+在客户端填入优选IP、更改端口为443，开启tls。
+
 ### 三、Alist on docker
 
 1.添加镜像源
