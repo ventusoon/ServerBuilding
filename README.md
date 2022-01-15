@@ -13,7 +13,7 @@ apt update
 
 预留主站点域名地址给网站搭建，给各个应用添加前端路径。
 
-若显示“不安全连接”，再次在宝塔的SSL中开启“开启强制使用https”。
+#-若显示“不安全连接”，再次在宝塔的SSL中开启“开启强制使用https”。
 
 ### 一、宝塔面板 
 1.使用一键配置工具，选择29→62
@@ -26,14 +26,15 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 
 4.设置，添加SSL，开启强制使用https。
 
-### 二、X-UI
-这里使用docker安装器安装。
+5.安装docker安装器。
 
-1.宝塔安装docker安装器，添加镜像源
+### 二、X-UI on docker
+
+1.添加镜像源
 ```bash
 enwaiax/x-ui:latest
 ```
-2.不会配置容器，使用代码
+2.不配置容器，使用代码
 ```bash
 mkdir x-ui && cd x-ui
 docker run -itd --network=host \
@@ -51,5 +52,27 @@ docker run -itd --network=host \
 目标URL  http://127.0.0.1:54321  发送域名 $host
 #其余留空
 ```
+
+### 三、Alist on docker
+
+1.添加镜像源
+```bash
+xhofe/alist:latest
+```
+2.不配置容器，使用代码
+```bash
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
+```
+
+3.进入x.x.x.x:5244，添加alist路径 /a
+
+4.添加反向代理，开启高级功能
+```bash
+代理名称 alist
+代理目录 /a
+目标URL  http://127.0.0.1:5244  发送域名 $host
+#其余留空
+```
+
 
 
