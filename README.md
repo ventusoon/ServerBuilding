@@ -43,12 +43,12 @@ docker run -itd --network=host \
     --name x-ui --restart=unless-stopped \
     enwaiax/x-ui:latest
 ```
-3.进入x.x.x.x:54321，修改X-UI面板路径 /x
 
-4.添加反向代理，开启高级功能
+3.在Cloudflare中解析二级域名x.example.com
+
+4.添加反向代理到x.example.com
 ```bash
 代理名称 x-ui
-代理目录 /x
 目标URL  http://127.0.0.1:54321  发送域名 $host
 #其余留空
 ```
@@ -64,12 +64,11 @@ xhofe/alist:latest
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
 
-3.进入x.x.x.x:5244，添加alist路径 /a
+3.在Cloudflare中解析二级域名a.example.com
 
-4.添加反向代理，开启高级功能
+4.添加反向代理到a.example.com
 ```bash
 代理名称 alist
-代理目录 /a
 目标URL  http://127.0.0.1:5244  发送域名 $host
 #其余留空
 ```
