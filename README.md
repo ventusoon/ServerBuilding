@@ -1,7 +1,16 @@
-# LuvSia 
-# 从零开始的服务器搭建纪实
+LuvSia 
+从零开始的服务器搭建纪实
+===========================
+## 目录
+* [准备工作](#准备工作)
+* [搭建思路](#搭建思路)
+* [开始搭建](#开始搭建)
+    * 宝塔面板
+    * X-UI on docker
+    * Alist on docker
 
-## 准备工作：
+
+# 准备工作
 
 VPS、解析到cloudflare的域名
 
@@ -9,7 +18,7 @@ VPS、解析到cloudflare的域名
 #更新软件源
 apt update
 ```
-## 搭建思路：
+# 搭建思路
 
 预留主站点域名地址给网站搭建，**~~给各个应用添加前端路径~~**。
 
@@ -21,9 +30,9 @@ apt update
 
 ***不要“强制开启https”***。
 
-## 常用工具
+# 开始搭建
 
-### 宝塔面板 
+## 宝塔面板 
 1.使用一键配置工具，选择29→62
 ```bash
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
@@ -36,7 +45,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 
 5.安装docker安装器。
 
-### X-UI on docker
+## X-UI on docker
 
 1.添加镜像源
 ```bash
@@ -61,7 +70,7 @@ docker run -itd --network=host \
 #其余留空
 ```
 
-5.配置vmess协议，开启ws，路径/xiya。
+5.配置`VMess`协议，开启`ws`，路径`/xiya`。
 
 6.开启CDN加速，在nginx配置文件中添加如下。
 ```javascript
@@ -89,7 +98,7 @@ location /xiya {
 -开启tls。
 ```
 
-### Alist on docker
+## Alist on docker
 
 1.添加镜像源
 ```bash
