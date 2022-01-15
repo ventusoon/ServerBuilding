@@ -191,11 +191,9 @@ ExecStart=/usr/bin/rclone mount luvsia:ventus /GoogleDrive \
  --default-permissions \
  --allow-non-empty \
  --allow-other \
- --transfers 4 \
  --buffer-size 32M \
- --low-level-retries 200
- --dir-cache-time 12h
- --vfs-read-chunk-size 32M
+ --dir-cache-time 12h \
+ --vfs-read-chunk-size 64M \
  --vfs-read-chunk-size-limit 1G
 ExecStop=/bin/fusermount -u LocalFolder
 Restart=on-abort
