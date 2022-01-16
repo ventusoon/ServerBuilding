@@ -168,7 +168,7 @@ docker run -d --name="transmission" \
 ## `Rclone` mount `GoogleDrive`
 |Work|Web|Tools|
 |---|---|---
-|Rclone| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/Rclone.png" width="65px">](https://github.com/rclone/rclone)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/GoogleDrive.png" width="65px">](https://drive.google.com)|
+|Rclone| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/Rclone.svg" width="65px">](https://github.com/rclone/rclone)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/GoogleDrive.png" width="65px">](https://drive.google.com)|
 
 **1.安装`Rclone`**
 ```bash
