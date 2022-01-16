@@ -149,7 +149,7 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 ## `Transmission` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/transmission.png" width="150px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)|
+|Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/transmission.png" width="150px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://hub.docker.com/r/helloz/transmission)|
 
 **1.添加镜像源**
 ```
