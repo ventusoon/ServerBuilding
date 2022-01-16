@@ -35,7 +35,7 @@ apt update
 ## `宝塔面板`
 |Work|Web|
 |---|---
-|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/bt.png" width="65px">](https://fenhao.me/10.html)|
+|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/bt.png" width="65px">](https://www.hostcli.com)|
 
 
 **1.使用一键配置工具。**
@@ -71,7 +71,7 @@ wget -O install.sh http://download.yu.al/install/install-ubuntu_6.0.sh && bash i
 ## `X-UI` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|x-ui|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/xui.png" width="65px">](https://github.com/vaxilu/x-ui)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)
+|x-ui|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/xui.png" width="65px">](https://github.com/vaxilu/x-ui)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://hub.docker.com/r/enwaiax/x-ui)
 
 **1.添加镜像源**
 ```
@@ -126,7 +126,7 @@ location /xiya {
 ## `Alist` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|Alist| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/alist.png" width="65px">](https://github.com/Xhofe/alist)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)|
+|Alist| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/alist.png" width="65px">](https://github.com/Xhofe/alist)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://hub.docker.com/r/xhofe/alist)|
 
 **1.添加镜像源**
 ```
@@ -152,7 +152,7 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 
 **1.添加镜像源**
 ```
-helloz/transmission
+helloz/transmission:latest
 ```
 **2.不配置容器，使用代码**
 ```javascript
@@ -286,5 +286,14 @@ bash <(curl -fsSL git.io/warp.sh) s5
 
 # 后记
 # 感谢
-[@HostCLi](https://www.hostcli.com/)
-jinwyp
+[@guodongxiaren](https://github.com/guodongxiaren/README)  
+[@HostCLi](https://www.hostcli.com)  
+[@jinwyp](https://github.com/jinwyp/one_click_script)  
+[@Xhofe](https://github.com/Xhofe/alist)  
+[@vaxilu](https://github.com/vaxilu/x-ui)  
+[@enwaiax](https://hub.docker.com/r/enwaiax/x-ui)  
+[@helloxz](https://github.com/helloxz/docker-transmission)  
+[@moerats](https://www.moerats.com/archives/491)  
+[@P3TERX](https://github.com/P3TERX/warp.sh)  
+
+
