@@ -38,7 +38,11 @@ apt update
 
 
 
-## <img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/bt.png" width="65px">`宝塔面板`
+## `宝塔面板`
+|Work|Web|
+|---|---
+|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/bt.png" width="65px">](https://www.bt.cn)|
+
 
 **1.使用一键配置工具，选择`29`→`62`**
 ```bash
@@ -54,6 +58,9 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 **5.安装`docker`安装器。**
 
 ## `X-UI` on `docker`
+|Work|Web|Tools|
+|---|---|---
+|x-ui|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/xui.png" width="65px">](https://github.com/vaxilu/x-ui)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/docker.png" width="65px">](https://www.docker.com/)
 
 **1.添加镜像源**
 ```
@@ -105,9 +112,10 @@ location /xiya {
 -开启tls。
 ```
 
-[![alist-logo]]
-
 ## `Alist` on `docker`
+|Work|Web|Tools|
+|---|---|---
+|Alist| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/alist.png" width="65px">](https://github.com/Xhofe/alist)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/docker.png" width="65px">](https://www.docker.com/)|
 
 **1.添加镜像源**
 ```
@@ -127,6 +135,9 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 ```
 
 ## `Transmission` on `docker`
+|Work|Web|Tools|
+|---|---|---
+|Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/Transmission.png" width="65px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/docker.png" width="65px">](https://www.docker.com/)|
 
 **1.添加镜像源**
 ```
@@ -155,6 +166,9 @@ docker run -d --name="transmission" \
 ```
 
 ## `Rclone` mount `GoogleDrive`
+|Work|Web|Tools|
+|---|---|---
+|Rclone| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/Rclone.png" width="65px">](https://github.com/rclone/rclone)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/GoogleDrive.png" width="65px">](https://drive.google.com)|
 
 **1.安装`Rclone`**
 ```bash
@@ -166,7 +180,7 @@ wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh
 rclone config
 ```
 
-**3.选择`GoogleDrive`，剩余操作参考[这里](https://www.jiyiblog.com/archives/031167.html)**
+**3.选择`GoogleDrive`，剩余操作参考[这里](https://www.moerats.com/archives/491/)**
 
 **4.挂载磁盘**
 ```
@@ -258,12 +272,3 @@ bash <(curl -fsSL git.io/warp.sh) 6
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) s5
 ```
-
---------------------------------
-[alist-logo]:<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/alist.png" width="65px"><br/>
-[bt-logo]:/img/logo/bt.png "宝塔logo" width="65px"
-[docker-logo]:/img/logo/docker.png "docker logo"
-[GoogleDrive-logo]:/img/logo/GoogleDrive.png "谷歌云盘logo"
-[Rclone-logo]:/img/logo/Rclone.png "Rclone logo"
-[Transmission-logo]:/img/log/Transmission.png "Transmission logo"
-[xui-logo]:/img/log/xui.png "xui logo"
