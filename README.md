@@ -16,7 +16,7 @@ LuvSia
 
 # 准备工作
 |VPS|Domain||||||
-|---|---|---|---|---|---|---
+|---|:---:|:----:|:---:|:----:|:---:|:----:|
 |[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/dmit.png" width="200px">](https://www.dmit.io/)|example.com|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/nginx.svg" width="100px">](https://www.nginx.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/mysql.png" width="80px">](https://www.mysql.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/php.svg" width="70px">](https://www.php.net)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/phpmyadmin.png" width="100px">](https://www.phpmyadmin.net)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/cloudflare.svg" width="150px">](https://www.cloudflare.com)|
 
 *更新软件源*
@@ -35,7 +35,7 @@ apt update
 
 ## `宝塔面板`
 |Work|Web|
-|---|---
+|:----:|:---:|
 |宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/bt.png" width="65px">](https://www.hostcli.com)|
 
 
@@ -52,12 +52,12 @@ wget -O install.sh http://download.yu.al/install/install-ubuntu_6.0.sh && bash i
 **2.安装`nginx-1.21`、`mysql-5.5`、`php-7.4`、`phpmyadmin-5.0`四件套**
 
 **3.添加站点。**
-|Work|Domain|
-|---|---
-|alist|a.example.com|
-|~~宝塔面板~~|~~b.example.com~~|**~~无法使用反向代理，暂时放弃~~**
-|Transmission|t.example.com|
-|X-UI|x.example.com|
+|Work|Domain||
+|---|---|:---:|
+|alist|a.example.com|正常|
+|~~宝塔面板~~|~~b.example.com~~|**~~无法使用反向代理，暂时放弃~~**|
+|Transmission|t.example.com|正常|
+|X-UI|x.example.com|正常|
 
 **4.设置，添加SSL，不要`强制开启https`。**
 
