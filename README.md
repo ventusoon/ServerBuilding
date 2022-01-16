@@ -232,15 +232,23 @@ systemctl status rclone
 ## Cloudflare WARP
 [使用教程](https://p3terx.com/archives/cloudflare-warp-configuration-script.html)
 
-**自动配置 WARP WireGuard 双栈全局网络**
+**功能菜单**
+```Bash
+bash <(curl -fsSL git.io/warp.sh) menu
+```
+**WARP WireGuard 双栈全局网络**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) d
 ```
-**自动配置 WARP WireGuard IPv4 网络**
+**IPv4 网络**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) 4
 ```
-**自动配置 WARP WireGuard IPv6 网络**
+**IPv6 网络**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) 6
+```
+**WARP 官方客户端 SOCKS5 代理**
+```Bash
+bash <(curl -fsSL git.io/warp.sh) s5
 ```
