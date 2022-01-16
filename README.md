@@ -15,8 +15,9 @@ LuvSia
 * [巨人之肩](#感谢)
 
 # 准备工作
-
-VPS、解析到cloudflare的域名
+|VPS|Domain|Building environment|
+|---|---|---
+|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/dmit.svg" width="65px">](https://www.dmit.io/)|example.com|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/nginx.svg" width="65px">](https://www.nginx.com)[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/mysql.png" width="65px">](https://www.mysql.com)[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/php.svg" width="65px">](https://www.php.net)[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/phpmyadmin.png" width="65px">](https://www.phpmyadmin.com)
 
 *更新软件源*
 ```
