@@ -35,7 +35,7 @@ apt update
 ## `宝塔面板`[纯净版](https://fenhao.me/10.html)
 |Work|Web|
 |---|---
-|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/bt.png" width="65px">](https://www.bt.cn)|
+|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/bt.png" width="65px">](https://www.bt.cn)|
 
 
 **1.使用一键配置工具。**
@@ -71,7 +71,7 @@ wget -O install.sh http://download.yu.al/install/install-ubuntu_6.0.sh && bash i
 ## `X-UI` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|x-ui|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/xui.png" width="65px">](https://github.com/vaxilu/x-ui)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/docker.png" width="65px">](https://www.docker.com/)
+|x-ui|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/xui.png" width="65px">](https://github.com/vaxilu/x-ui)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)
 
 **1.添加镜像源**
 ```
@@ -126,7 +126,7 @@ location /xiya {
 ## `Alist` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|Alist| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/alist.png" width="65px">](https://github.com/Xhofe/alist)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/docker.png" width="65px">](https://www.docker.com/)|
+|Alist| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/alist.png" width="65px">](https://github.com/Xhofe/alist)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)|
 
 **1.添加镜像源**
 ```
@@ -148,7 +148,7 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 ## `Transmission` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/Transmission.png" width="65px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/docker.png" width="65px">](https://www.docker.com/)|
+|Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/transmission.png" width="65px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)|
 
 **1.添加镜像源**
 ```
@@ -179,7 +179,7 @@ docker run -d --name="transmission" \
 ## `Rclone` mount `GoogleDrive`
 |Work|Web|Tools|
 |---|---|---
-|Rclone| [<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/Rclone.svg" width="65px">](https://github.com/rclone/rclone)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/GoogleDrive.png" width="65px">](https://drive.google.com)|
+|Rclone| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/rclone.svg" width="65px">](https://github.com/rclone/rclone)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/googledrive.png" width="65px">](https://drive.google.com)|
 
 **1.安装`Rclone`**
 ```bash
