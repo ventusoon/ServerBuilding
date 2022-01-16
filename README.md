@@ -23,36 +23,37 @@ apt update
 ```
 # 搭建思路
 
-**预留主站点域名地址给网站搭建**，**~~给各个应用添加前端路径~~**。
+**预留主站点域名地址给网站搭建**，**~~给各个应用添加前端路径。~~**
 
-**部分应用无法使用二级目录，所以这里只能使用添加二级域名的思路，区别各个应用。** 
 
-**记录证书路径，证书可以直接在宝塔面板进行更新，或是设置定时任务自动更新;**
+**部分应用无法使用`二级目录`，所以这里只能使用添加`二级域名`的思路，区别各个应用。** 
 
-**宝塔面板申请的证书在如下目录：/www/server/panel/vhost/cert/你的域名/ 目录之下。**  
+**记录`证书路径`，证书可以直接在`宝塔面板`进行更新，或是设置定时任务自动更新;**
+
+**`宝塔面板`申请的证书在如下目录：`/www/server/panel/vhost/cert/你的域名/` 目录之下。**  
 
 ***不要`强制开启https`***。
 
 # 开始搭建
 
-[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/btlogo.png" width="65px" alt="宝塔面板">](https://www.bt.cn/)
+![bt-logo]
 
 ## 宝塔面板
 
-**1.使用一键配置工具，选择29→62**
+**1.使用一键配置工具，选择`29`→`62`**
 ```bash
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
 ```
 ![](https://github.com/ventusoon/LuvSia/raw/main/img/sh.png)
-**2.安装nginx-1.21、mysql-5.5、php-7.4、phpmyadmin-5.0四件套**
+**2.安装`nginx-1.21`、`mysql-5.5`、`php-7.4`、`phpmyadmin-5.0`四件套**
 ![](https://github.com/ventusoon/LuvSia/raw/main/img/bt.png)
 **3.添加站点。**
 
-**4.设置，添加SSL，开启强制使用https。**
+**4.设置，添加SSL，不要`强制开启https`。**
 
-**5.安装docker安装器。**
+**5.安装`docker`安装器。**
 
-## X-UI on docker
+## `X-UI` on docker
 
 **1.添加镜像源**
 ```
@@ -104,7 +105,7 @@ location /xiya {
 -开启tls。
 ```
 
-[<img src="https://store.heytapimage.com/cdo-portal/feedback/202112/05/1542f45f86b8609495b69c5380753135.png" width="65px" alt="alistlogo">](https://github.com/Xhofe/alist)
+[![alist-logo]]
 
 ## Alist on docker
 
@@ -257,3 +258,12 @@ bash <(curl -fsSL git.io/warp.sh) 6
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) s5
 ```
+
+--------------------------------
+![alist-logo](<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/alist.png" width="65px"><br/>)
+[bt-logo]:/img/logo/bt.png "宝塔logo" width="65px"
+[docker-logo]:/img/logo/docker.png "docker logo"
+[GoogleDrive-logo]:/img/logo/GoogleDrive.png "谷歌云盘logo"
+[Rclone-logo]:/img/logo/Rclone.png "Rclone logo"
+[Transmission-logo]:/img/log/Transmission.png "Transmission logo"
+[xui-logo]:/img/log/xui.png "xui logo"
