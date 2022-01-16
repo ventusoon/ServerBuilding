@@ -36,9 +36,9 @@ apt update
 
 # 开始搭建
 
-![bt-logo]
 
-## 宝塔面板
+
+## <img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/bt.png" width="65px">`宝塔面板`
 
 **1.使用一键配置工具，选择`29`→`62`**
 ```bash
@@ -53,7 +53,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 
 **5.安装`docker`安装器。**
 
-## `X-UI` on docker
+## `X-UI` on `docker`
 
 **1.添加镜像源**
 ```
@@ -69,7 +69,7 @@ docker run -itd --network=host \
     enwaiax/x-ui:latest
 ```
 
-**3.在Cloudflare中解析二级域名`x.example.com`**
+**3.在`Cloudflare`中解析二级域名`x.example.com`**
 
 **4.添加反向代理到`x.example.com`**
 ```
@@ -79,7 +79,7 @@ docker run -itd --network=host \
 
 **5.配置`VMess`协议，开启`ws`，路径`/xiya`。**
 
-**6.开启CDN加速，在nginx配置文件中添加如下。**
+**6.开启CDN加速，在`nginx`配置文件中添加如下。**
 ```javascript
 location /xiya {
         proxy_redirect off;
@@ -95,7 +95,7 @@ location /xiya {
   }
 ```
 
-**7.开启Cloudflare小云朵，并优选IP。**
+**7.开启`Cloudflare`小云朵，并优选IP。**
 
 **8.[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/bestIP.zip) ，选出优选IP后，客户端如下配置**
 ```diff
@@ -107,7 +107,7 @@ location /xiya {
 
 [![alist-logo]]
 
-## Alist on docker
+## `Alist` on `docker`
 
 **1.添加镜像源**
 ```
@@ -118,7 +118,7 @@ xhofe/alist:latest
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
 
-**3.在Cloudflare中解析二级域名a.example.com**
+**3.在`Cloudflare`中解析二级域名`a.example.com`**
 
 **4.添加反向代理到a.example.com**
 ```
@@ -126,7 +126,7 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 目标URL  http://127.0.0.1:5244  发送域名 $host
 ```
 
-## Transmission on docker
+## `Transmission` on `docker`
 
 **1.添加镜像源**
 ```
@@ -146,7 +146,7 @@ docker run -d --name="transmission" \
   helloz/transmission
 ```
 
-**3.在Cloudflare中解析二级域名t.example.com**
+**3.在`Cloudflare`中解析二级域名`t.example.com`**
 
 **4.添加反向代理到t.example.com**
 ```
@@ -154,9 +154,9 @@ docker run -d --name="transmission" \
 目标URL  http://127.0.0.1:9091  发送域名 $host
 ```
 
-## Rclone mount GoogleDrive
+## `Rclone` mount `GoogleDrive`
 
-**1.安装Rclone**
+**1.安装`Rclone`**
 ```bash
 wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh
 ```
@@ -166,7 +166,7 @@ wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh
 rclone config
 ```
 
-**3.选择GoogleDrive，剩余操作参考[这里](https://www.jiyiblog.com/archives/031167.html)**
+**3.选择`GoogleDrive`，剩余操作参考[这里](https://www.jiyiblog.com/archives/031167.html)**
 
 **4.挂载磁盘**
 ```
@@ -213,7 +213,7 @@ WantedBy=default.target
 EOF
 ```
 
-**挂载成功后，输入df -h命令即可看到挂载的磁盘**
+**挂载成功后，输入`df -h`命令即可看到挂载的磁盘**
 
 **6.常用命令**
 
@@ -230,37 +230,37 @@ systemctl stop rclone
 systemctl status rclone
 ```
 
-**7.Transmission添加rlone挂载在GoogleDrive上的路径**
+**7.`Transmission`添加`rlone`挂载在`GoogleDrive`上的路径**
 ```
 /GoogleDrive
 ```
 
-## Cloudflare WARP
+## `Cloudflare WARP`
 [使用教程](https://p3terx.com/archives/cloudflare-warp-configuration-script.html)
 
 **功能菜单**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) menu
 ```
-**WARP WireGuard 双栈全局网络**
+**`WARP WireGuard` 双栈全局网络**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) d
 ```
-**IPv4 网络**
+**`IPv4` 网络**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) 4
 ```
-**IPv6 网络**
+**`IPv6` 网络**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) 6
 ```
-**WARP 官方客户端 SOCKS5 代理**
+**`WARP 官方客户端` `SOCKS5` 代理**
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) s5
 ```
 
 --------------------------------
-![alist-logo](<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/alist.png" width="65px"><br/>)
+[alist-logo]:<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/alist.png" width="65px"><br/>
 [bt-logo]:/img/logo/bt.png "宝塔logo" width="65px"
 [docker-logo]:/img/logo/docker.png "docker logo"
 [GoogleDrive-logo]:/img/logo/GoogleDrive.png "谷歌云盘logo"
