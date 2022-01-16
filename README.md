@@ -116,7 +116,7 @@ location /xiya {
 
 **7.开启`Cloudflare`小云朵，并优选IP。**
 
-**8.[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/bestIP.zip) ，选出优选IP后，客户端如下配置**
+**8.[下载优选IP](https://github.com/XIU2/CloudflareSpeedTest/releases) ，选出优选IP后，客户端如下配置**
 ```diff
 -填入优选IP
 -更改端口为443；
@@ -295,6 +295,7 @@ bash <(curl -fsSL git.io/warp.sh) s5
 [@Xhofe](https://github.com/Xhofe/alist)  
 [@vaxilu](https://github.com/vaxilu/x-ui)  
 [@enwaiax](https://hub.docker.com/r/enwaiax/x-ui)  
+[@XIU2](https://github.com/XIU2/CloudflareSpeedTest)  
 [@helloxz](https://github.com/helloxz/docker-transmission)  
 [@moerats](https://www.moerats.com/archives/491)  
 [@P3TERX](https://github.com/P3TERX/warp.sh)  
