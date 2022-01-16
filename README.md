@@ -12,7 +12,6 @@ LuvSia
     * [Rclone mount GoogleDrive](#Rclone-mount-GoogleDrive)
     * [Cloudflare WARP](#Cloudflare-WARP)
 
-
 # 准备工作
 
 VPS、解析到cloudflare的域名
@@ -23,20 +22,13 @@ apt update
 ```
 # 搭建思路
 
-**预留主站点域名地址给网站搭建**，**~~给各个应用添加前端路径。~~**
+**预留一级域名搭建网站**，**~~给各个应用添加前端路径。~~** 
 
+**后因部分应用无法添加`二级目录`，所以这里只能使用添加`二级域名`的思路，区别各个应用。** 
 
-**部分应用无法使用`二级目录`，所以这里只能使用添加`二级域名`的思路，区别各个应用。** 
-
-**记录`证书路径`，证书可以直接在`宝塔面板`进行更新，或是设置定时任务自动更新;**
-
-**`宝塔面板`申请的证书在如下目录：`/www/server/panel/vhost/cert/你的域名/` 目录之下。**  
-
-***不要`强制开启https`***。
+**再通过添加`反向代理`，实现分域名访问不同前端应用。**
 
 # 开始搭建
-
-
 
 ## `宝塔面板`
 |Work|Web|
@@ -52,8 +44,20 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 **2.安装`nginx-1.21`、`mysql-5.5`、`php-7.4`、`phpmyadmin-5.0`四件套**
 
 **3.添加站点。**
+|Work|Domain|
+|---|---
+|alist|a.example.com|
+|~~宝塔面板~~|~~b.example.com~~|
+|Transmission|t.example.com|
+|X-UI|x.example.com|
 
 **4.设置，添加SSL，不要`强制开启https`。**
+
+**记录`证书路径`，证书可以直接在`宝塔面板`进行更新，或是设置定时任务自动更新;**
+
+**`宝塔面板`申请的证书在如下目录：`/www/server/panel/vhost/cert/你的域名/` 目录之下。**  
+
+***不要`强制开启https`***。
 
 **5.安装`docker`安装器。**
 
