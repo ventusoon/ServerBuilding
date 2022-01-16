@@ -2,15 +2,17 @@ LuvSia
 从零开始的服务器搭建纪实
 ===========================
 # 目录
-* [准备工作](#准备工作)
-* [搭建思路](#搭建思路)
-* [开始搭建](#开始搭建)
+* [摩拳擦掌](#准备工作)
+* [开阔思路](#搭建思路)
+* [废寝忘食](#开始搭建)
     * [宝塔面板](#宝塔面板)
     * [X-UI on docker](#x-ui-on-docker)
     * [Alist on docker](#alist-on-docker)
     * [Transmission on docker](#Transmission-on-docker)
     * [Rclone mount GoogleDrive](#Rclone-mount-GoogleDrive)
     * [Cloudflare WARP](#Cloudflare-WARP)
+* [朝花夕拾](#后记)
+* [巨人之肩](#感谢)
 
 # 准备工作
 
@@ -30,15 +32,20 @@ apt update
 
 # 开始搭建
 
-## `宝塔面板`
+## `宝塔面板`[纯净版](https://fenhao.me/10.html)
 |Work|Web|
 |---|---
 |宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/logo/bt.png" width="65px">](https://www.bt.cn)|
 
 
-**1.使用一键配置工具，选择`29`→`62`**
+**1.使用一键配置工具。**
+一键脚本集成工具
 ```bash
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
+```
+或
+```
+wget -O install.sh http://download.yu.al/install/install-ubuntu_6.0.sh && bash install.sh
 ```
 
 **2.安装`nginx-1.21`、`mysql-5.5`、`php-7.4`、`phpmyadmin-5.0`四件套**
@@ -276,3 +283,7 @@ bash <(curl -fsSL git.io/warp.sh) 6
 ```Bash
 bash <(curl -fsSL git.io/warp.sh) s5
 ```
+
+# 后记
+# 感谢
+[@HostCLi](https://www.hostcli.com/)
