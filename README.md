@@ -102,7 +102,7 @@ location /xiya {
 ```
 
 ## Alist on docker
-
+![Alist](https://store.heytapimage.com/cdo-portal/feedback/202112/05/1542f45f86b8609495b69c5380753135.png)
 **1.添加镜像源**
 ```
 xhofe/alist:latest
