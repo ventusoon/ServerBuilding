@@ -32,10 +32,10 @@ apt update
 
 # 开始搭建
 
-## `宝塔面板`[纯净版](https://fenhao.me/10.html)
+## `宝塔面板`
 |Work|Web|
 |---|---
-|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/bt.png" width="65px">](https://www.bt.cn)|
+|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/bt.png" width="65px">](https://fenhao.me/10.html)|
 
 
 **1.使用一键配置工具。**
@@ -287,3 +287,4 @@ bash <(curl -fsSL git.io/warp.sh) s5
 # 后记
 # 感谢
 [@HostCLi](https://www.hostcli.com/)
+jinwyp
