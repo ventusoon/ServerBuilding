@@ -55,7 +55,7 @@ wget -O install.sh http://download.yu.al/install/install-ubuntu_6.0.sh && bash i
 |Work|Domain|
 |---|---
 |alist|a.example.com|
-|~~宝塔面板~~|~~b.example.com~~|
+|~~宝塔面板~~|~~b.example.com~~|**~~无法使用反向代理，暂时放弃~~**
 |Transmission|t.example.com|
 |X-UI|x.example.com|
 
