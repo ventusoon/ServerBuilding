@@ -35,7 +35,10 @@ apt update
 
 # 开始搭建
 
-## 宝塔面板 
+[<img src="https://github.com/ventusoon/LuvSia/raw/main/img/btlogo.png" width="65px" alt="宝塔面板">](https://www.bt.cn/)
+
+## 宝塔面板
+
 **1.使用一键配置工具，选择29→62**
 ```bash
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
@@ -93,7 +96,7 @@ location /xiya {
 
 **7.开启Cloudflare小云朵，并优选IP。**
 
-**8.[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/%E4%BC%98%E9%80%89ip.zip) ，选出优选IP后，客户端如下配置**
+**8.[下载优选IP](https://github.com/ventusoon/LuvSia/raw/main/tools/bestIP.zip) ，选出优选IP后，客户端如下配置**
 ```diff
 -填入优选IP
 -更改端口为443；
@@ -101,8 +104,10 @@ location /xiya {
 -开启tls。
 ```
 
+[<img src="https://store.heytapimage.com/cdo-portal/feedback/202112/05/1542f45f86b8609495b69c5380753135.png" width="65px" alt="alistlogo">](https://github.com/Xhofe/alist)
+
 ## Alist on docker
-![Alist](https://store.heytapimage.com/cdo-portal/feedback/202112/05/1542f45f86b8609495b69c5380753135.png)
+
 **1.添加镜像源**
 ```
 xhofe/alist:latest
