@@ -17,7 +17,7 @@ LuvSia
 # 准备工作
 |VPS|Domain|||||
 |---|---|---|---|---|---
-|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/dmit.png" width="65px">](https://www.dmit.io/)|example.com|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/nginx.svg" width="65px">](https://www.nginx.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/mysql.png" width="65px">](https://www.mysql.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/php.svg" width="65px">](https://www.php.net)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/phpmyadmin.png" width="65px">](https://www.phpmyadmin.net)
+|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/dmit.png" width="200px">](https://www.dmit.io/)|example.com|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/nginx.svg" width="100px">](https://www.nginx.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/mysql.png" width="80px">](https://www.mysql.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/php.svg" width="70px">](https://www.php.net)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/phpmyadmin.png" width="100px">](https://www.phpmyadmin.net)
 
 *更新软件源*
 ```
@@ -262,7 +262,9 @@ systemctl status rclone
 ```
 
 ## `Cloudflare WARP`
-[使用教程](https://p3terx.com/archives/cloudflare-warp-configuration-script.html)
+|Work|Web|Use|
+|---|---|---
+|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/cloudflare.svg" width="65px">](https://www.cloudflare.com)|[使用教程](https://p3terx.com/archives/cloudflare-warp-configuration-script.html)|
 
 **功能菜单**
 ```Bash
