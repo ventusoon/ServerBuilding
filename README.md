@@ -15,9 +15,9 @@ LuvSia
 * [巨人之肩](#感谢)
 
 # 准备工作
-|VPS|Domain|||||
-|---|---|---|---|---|---
-|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/dmit.png" width="200px">](https://www.dmit.io/)|example.com|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/nginx.svg" width="100px">](https://www.nginx.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/mysql.png" width="80px">](https://www.mysql.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/php.svg" width="70px">](https://www.php.net)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/phpmyadmin.png" width="100px">](https://www.phpmyadmin.net)
+|VPS|Domain||||||
+|---|---|---|---|---|---|---
+|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/dmit.png" width="200px">](https://www.dmit.io/)|example.com|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/nginx.svg" width="100px">](https://www.nginx.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/mysql.png" width="80px">](https://www.mysql.com)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/php.svg" width="70px">](https://www.php.net)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/phpmyadmin.png" width="100px">](https://www.phpmyadmin.net)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/cloudflare.svg" width="150px">](https://www.cloudflare.com)|
 
 *更新软件源*
 ```
@@ -149,7 +149,7 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 ## `Transmission` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/transmission.png" width="65px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)|
+|Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/transmission.png" width="150px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://www.docker.com/)|
 
 **1.添加镜像源**
 ```
@@ -180,7 +180,7 @@ docker run -d --name="transmission" \
 ## `Rclone` mount `GoogleDrive`
 |Work|Web|Tools|
 |---|---|---
-|Rclone| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/rclone.svg" width="65px">](https://github.com/rclone/rclone)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/googledrive.png" width="65px">](https://drive.google.com)|
+|Rclone| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/rclone.svg" width="150px">](https://github.com/rclone/rclone)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/googledrive.png" width="65px">](https://drive.google.com)|
 
 **1.安装`Rclone`**
 ```bash
@@ -264,7 +264,7 @@ systemctl status rclone
 ## `Cloudflare WARP`
 |Work|Web|Use|
 |---|---|---
-|宝塔面板|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/cloudflare.svg" width="65px">](https://www.cloudflare.com)|[使用教程](https://p3terx.com/archives/cloudflare-warp-configuration-script.html)|
+|Cloudflare WARP|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/cloudflare.svg" width="150px">](https://github.com/P3TERX/warp.sh)|[使用教程](https://p3terx.com/archives/cloudflare-warp-configuration-script.html)|
 
 **功能菜单**
 ```Bash
