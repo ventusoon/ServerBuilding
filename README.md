@@ -10,6 +10,7 @@ LuvSia
     * [Alist on docker](#alist-on-docker)
     * [Transmission on docker](#Transmission-on-docker)
     * [Rclone mount GoogleDrive](#Rclone-mount-GoogleDrive)
+    * [Cloudflare WARP](#Cloudflare-WARP)
 
 
 # 准备工作
@@ -165,7 +166,7 @@ rclone config
 ```
 mkdir -p /GoogleDrive
 ```
-```bash
+```javascript
 /usr/bin/rclone mount luvsia:ventus /GoogleDrive \
  --umask 0000 \
  --default-permissions \
@@ -179,7 +180,7 @@ mkdir -p /GoogleDrive
  --vfs-read-chunk-size-limit 1G
  ```
 **5.配置开机自动挂载**
-```
+```javascript
 cat > /etc/systemd/system/rclone.service <<EOF
 [Unit]
 Description=Rclone
@@ -228,10 +229,18 @@ systemctl status rclone
 /GoogleDrive
 ```
 
-## Cloudflare WARP 一键配置脚本
+## Cloudflare WARP
 [使用教程](https://p3terx.com/archives/cloudflare-warp-configuration-script.html)
 
 **自动配置 WARP WireGuard 双栈全局网络**
-```bash
+```Bash
 bash <(curl -fsSL git.io/warp.sh) d
+```
+**自动配置 WARP WireGuard IPv4 网络**
+```Bash
+bash <(curl -fsSL git.io/warp.sh) 4
+```
+**自动配置 WARP WireGuard IPv6 网络**
+```Bash
+bash <(curl -fsSL git.io/warp.sh) 6
 ```
