@@ -124,6 +124,11 @@ location /xiya {
 -开启tls。
 ```
 
+**9.Surge配置**
+```java
+🇭🇰 VMess = vmess, 104.19.79.223, 443, username=2d285385-836d-4b30-f32c-11cdd637aeed, tls=true, tls13=false, ws=true, ws-path=/xiya, sni=ventusoon.com, ws-headers=Host:example.com, skip-cert-verify=0, tfo=false, udp-relay=true
+```
+
 ## `Alist` on `docker`
 |Work|Web|Tools|
 |---|---|---
