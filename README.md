@@ -203,6 +203,9 @@ rclone config
 ```
 mkdir -p /GoogleDrive
 ```
+```
+mkdir -p /Downloads
+```
 ```javascript
 /usr/bin/rclone mount luvsia:ventus /GoogleDrive \
  --umask 0000 \
