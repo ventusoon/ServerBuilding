@@ -200,6 +200,20 @@ docker run -d --name="transmission" \
 ```c
 apt-get install transmission-daemon
 ```
+**首先执行一次启动和停止命令，防止配置文件被覆盖**
+
+启动
+```
+service transmission-daemon start
+```
+停止
+```
+service transmission-daemon stop
+```
+重启
+```
+service transmission-daemon restart
+```
 
 **修改transmission-daemon配置文件**
 ```c
@@ -214,21 +228,11 @@ nano /var/lib/transmission-daemon/info/settings.json
 "rpc-whitelist": "*", //ip白名单
 "rpc-whitelist-enabled": false,  //是否开启ip白名单，false为否
 ```
-
-**常用命令**
-
-启动
+**执行启动命令**
 ```
 service transmission-daemon start
 ```
-停止
-```
-service transmission-daemon stop
-```
-重启
-```
-service transmission-daemon restart
-```
+
 ### 2.2[transmission-web-control](https://github.com/ronggang/transmission-web-control/wiki/Linux-Installation-CN)美化
 
 **获取安装脚本**
