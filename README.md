@@ -156,9 +156,14 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 |---|---|---
 |Transmission| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/transmission.png" width="150px">](https://github.com/helloxz/docker-transmission)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://hub.docker.com/r/helloz/transmission)|
 
-**1.添加镜像源**
+**1.构建镜像**
 ```
-helloz/transmission:latest
+# 克隆仓库
+git clone https://github.com/helloxz/docker-transmission.git
+# 进入仓库目录
+cd docker-transmission
+# 构建Docker镜像
+docker build -t luvsia:transmission
 ```
 **2.不配置容器，使用代码**
 ```javascript
@@ -168,11 +173,12 @@ docker run -d --name="transmission" \
   -p 9091:9091 \
   -p 51413:51413 \
   -p 51413:51413/udp \
-  -v /data/downloads:/root/Downloads \
-  -v /data/transmission:/root/.config/transmission-daemon \
+  -v /GoogleDrive:/Downloads \
   --restart=always \
-  helloz/transmission
+  luvsia:transmission
 ```
+
+**/GoogleDrive:本地下载目录为[`Rclone` mount `GoogleDrive`](#Rclone-mount-GoogleDrive)中的谷歌云盘目录，自动下载到谷歌云盘，实现无线网盘**
 
 **3.在`Cloudflare`中解析二级域名`t.example.com`**
 
