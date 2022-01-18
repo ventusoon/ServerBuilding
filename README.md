@@ -10,6 +10,7 @@ LuvSia
     * [Alist on docker](#alist-on-docker)
     * [Transmission on docker](#Transmission-on-docker)
     * [Rclone mount GoogleDrive](#Rclone-mount-GoogleDrive)
+    * [Live-torrent on docker](#Live-torrent-on-docker)
     * [Cloudflare WARP](#Cloudflare-WARP)
 * [朝花夕拾](#后记)
 * [巨人之肩](#感谢)
