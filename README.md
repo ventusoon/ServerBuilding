@@ -86,11 +86,11 @@ rm -f /www/server/panel/data/admin_path.pl
 |---|---|---
 |x-ui|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/xui.png" width="65px">](https://github.com/vaxilu/x-ui)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://hub.docker.com/r/enwaiax/x-ui)
 
-**1.添加镜像源**
+**1.镜像源**
 ```
 enwaiax/x-ui:latest
 ```
-**2.不配置容器，使用代码**
+**2.安装运行**
 ```bash
 mkdir x-ui && cd x-ui
 docker run -itd --network=host \
@@ -341,6 +341,25 @@ systemctl status rclone
 **7.`Transmission`添加`rlone`挂载在`GoogleDrive`上的路径**
 ```
 /GoogleDrive
+```
+
+## `Live-torrent` on `docker`
+
+**1.镜像源**
+```
+davenchy/live-torrent
+```
+**2.安装运行**
+```bash
+docker run --restart=always --name live-torrent -d -p 8080:8080 davenchy/live-torrent
+```
+
+**3.在`Cloudflare`中解析二级域名`live.example.com`**
+
+**4.添加反向代理到`live.example.com`**
+```
+代理名称 Live-torrent
+目标URL  http://127.0.0.1:8080  发送域名 $host
 ```
 
 ## `Cloudflare WARP`
