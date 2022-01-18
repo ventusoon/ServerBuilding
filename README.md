@@ -54,20 +54,32 @@ wget -O install.sh http://download.yu.al/install/install-ubuntu_6.0.sh && bash i
 **3.添加站点。**
 |Work|Domain||
 |---|---|:---:|
-|alist|a.example.com|正常|
-|~~宝塔面板~~|~~b.example.com~~|**~~无法使用反向代理，暂时放弃~~**|
-|Transmission|t.example.com|正常|
-|X-UI|x.example.com|正常|
+|alist|a.example.com|**正常**|
+|宝塔面板|b.example.com|**正常**|
+|Transmission|t.example.com|**正常**|
+|X-UI|x.example.com|**正常**|
 
-**4.设置，添加SSL，不要`强制开启https`。**
+**4.设置，添加SSL，`强制开启https`。**
 
 **记录`证书路径`，证书可以直接在`宝塔面板`进行更新，或是设置定时任务自动更新;**
 
 **`宝塔面板`申请的证书在如下目录：`/www/server/panel/vhost/cert/你的域名/` 目录之下。**  
 
-***不要`强制开启https`***。
+***`强制开启https`***。
 
-**5.安装`docker`安装器。**
+**5.关闭面板`安全入户`，即删除`二级目录`。**
+```c
+rm -f /www/server/panel/data/admin_path.pl
+```
+
+**6.在`Cloudflare`中解析二级域名`b.example.com`**
+
+**7.添加反向代理到`b.example.com`**
+```
+代理名称 宝塔面板
+目标URL  http://127.0.0.1:8888  发送域名 $host
+```
+**8.安装`docker`安装器。**
 
 ## `X-UI` on `docker`
 |Work|Web|Tools|
