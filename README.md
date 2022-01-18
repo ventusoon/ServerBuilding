@@ -219,15 +219,15 @@ nano /var/lib/transmission-daemon/info/settings.json
 
 启动
 ```
-sudo service transmission-daemon start
+service transmission-daemon start
 ```
 停止
 ```
-sudo service transmission-daemon stop
+service transmission-daemon stop
 ```
 重启
 ```
-sudo service transmission-daemon restart
+service transmission-daemon restart
 ```
 ### 2.2[transmission-web-control](https://github.com/ronggang/transmission-web-control/wiki/Linux-Installation-CN)美化
 
