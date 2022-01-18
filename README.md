@@ -347,7 +347,7 @@ systemctl status rclone
 ## `Live-torrent` on `docker`
 |Work|Web|Tools|
 |---|---|---
-|live-torrent| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/live-torrent.png" width="150px">](https://github.com/Davenchy/live-torrent)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://hub.docker.com/r/helloz/transmission)|
+|live-torrent| [<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/live-torrent.png" width="100px">](https://github.com/Davenchy/live-torrent)|[<img src="https://github.com/ventusoon/LuvSia/raw/main/logo/docker.png" width="65px">](https://hub.docker.com/r/helloz/transmission)|
 
 **1.镜像源**
 ```
