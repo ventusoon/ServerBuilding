@@ -194,7 +194,42 @@ docker run -d --name="transmission" \
 
 **/GoogleDrive:本地下载目录为[`Rclone` mount `GoogleDrive`](#Rclone-mount-GoogleDrive)中的谷歌云盘目录，自动下载到谷歌云盘，实现无线网盘**
 
-### 2.[普通安装](https://github.com/ronggang/transmission-web-control/wiki/Linux-Installation-CN)
+### 2.1普通安装
+
+**安装transmission-daemon**
+```c
+apt-get install transmission-daemon
+```
+
+**修改transmission-daemon配置文件**
+```c
+nano /var/lib/transmission-daemon/info/settings.json
+```
+```
+"rpc-host-whitelist": "*",  //域名白名单，*为允许所有
+"rpc-host-whitelist-enabled": false, //是否开启白名单，false为否
+"rpc-password": "远程登录密码",
+"rpc-port": 9091, //远程登录端口
+"rpc-username": "远程帐号",
+"rpc-whitelist": "*", //ip白名单
+"rpc-whitelist-enabled": false,  //是否开启ip白名单，false为否
+```
+
+**常用命令**
+
+启动
+```
+sudo service transmission-daemon start
+```
+停止
+```
+sudo service transmission-daemon stop
+```
+重启
+```
+sudo service transmission-daemon restart
+```
+### 2.2[transmission-web-control](https://github.com/ronggang/transmission-web-control/wiki/Linux-Installation-CN)美化
 
 **获取安装脚本**
 ```
