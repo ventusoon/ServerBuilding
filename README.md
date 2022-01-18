@@ -254,6 +254,7 @@ bash install-tr-control-cn.sh
 代理名称 transmission
 目标URL  http://127.0.0.1:9091  发送域名 $host
 ```
+**5.修改默认保存目录/GoogleDrive，启用临时目录/Downloads**
 
 ## `Rclone` mount `GoogleDrive`
 |Work|Web|Tools|
